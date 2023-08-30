@@ -1,47 +1,149 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" type="x-icon" href="Taplogo.png">
-        <body>
-            <title>Maikit</title>
-           <a href="http://127.0.0.1:3000/index.html"><img src="Logo.png" alt="" width="130px"></a>
-        </body>
+<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<div class="wrapper">
+    <div class="sidebar">
+        <h2><a class="Logoofname" href="http://127.0.0.1:3000/test.html">Maikit</a></h2>
         <style>
-        nav{
-        width: 100%;
-        padding: 20px 0;
-        text-align: center;
-        
-        }
-        nav ul{
-        width: 100%;
-        margin-top: -106px;
-        margin-left: -365px;
-        font-size: 24px;
-        }
-        nav ul li{
-        display: inline-block;
-        list-style: none;
-        margin: 27px;
-        position: none;
-        font-family: 'Poppins', sans-serif;
-        
-        }
-        *{
-        text-decoration: none;
-        color: black;
+        .Logoofname{
+        color: white
         }
         </style>
-        <nav>
+        
         <ul>
-            <li><a href="http://127.0.0.1:3000/index.html">Home</a></li>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Services">Services</a></li>
-        <li><a href="#Conact">Contact</a></li>
-        </ul>
-       </nav> 
-    </head>
-</html>
+            <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
+            <li><a href="#"><i class="fa-solid fa-pen-to-square"></i> Privacy</a></li>
+            <li><a href="#"> <i class="fa-solid fa-newspaper"></i> About</a></li>
+            <li><a href="#"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+             <li><a href="#"><i class="fa-brands fa-discord"></i> Discord Server</a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i> Create account</a></li>
+           
+        </ul> 
+        <div class="social_media">
+        </div>
+    </div>
+    
+    <div class="main_content">
+        <div class="header" class="header">This is the first verison of MAIKIT Created by pulsiclient. v1.0.0 </div> 
+        <style>
+        .header{
+        height: 50px;
+        }
+        </style>
+        <div class="info">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+    </div>
+</div>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+   background-color: #201e3b;
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background: #100e1a;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.wrapper .sidebar ul li a{
+  color: #bdb8d7;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: #201c31;
+  border-radius: 12px;
+  
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: #fff;
+}
+ 
+.wrapper .sidebar .social_media{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .social_media a{
+  display: block;
+  width: 40px;
+  background: #ffffff;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header{
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 20px;
+}
+
+@media (max-height: 500px){
+  .social_media{
+    display: none !important;
+  }
+}
+</style>
